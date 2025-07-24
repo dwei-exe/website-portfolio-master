@@ -16,7 +16,7 @@ const Hero = () => {
             </div>
             <div className="flex-end col-span-7 place-self-center text-center sm:text-left">
                 <h1 className="text-black mb-4 lg:text-6xl text-4xl sm:text-5xl font-extrabold">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-600">Hello, I'm{" "}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-600">Hello, I&apos;m{" "}
                     </span>
                     <br />
                     <TypeAnimation
@@ -37,7 +37,7 @@ const Hero = () => {
                         />
 
                 </h1>
-                <p className ="text-black text-lg lg:text-xl mb-6">My passion is building real-world solutions that affect people's lives. Let's drive the future of our technology together.</p>
+                <p className ="text-black text-lg lg:text-xl mb-6">My passion is building real-world solutions that affect people&apos;s lives. Let&apos;s drive the future of our technology together.</p>
                 <div>
                     <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 hover:bg-white text-white font-bold hover:text-black border-2 bg-gradient-to-br from-blue-500 via bg-purple-500 to bg-pink-600 hover:border-black mt-3">
                         <a href="mailto:daniel.wei2006@hotmail.com" target="_blank" rel="noopener noreferrer">
