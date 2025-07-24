@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 
 const Hero = () => {
   return (
-  <section className="w-full" id="home">
+  <section className="w-full" id="contact">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20 lg:px-8 xl:py-16 md:py-16">
         <motion.div initial={{opacity:0, scale:0}} animate={{opacity:1, scale:1}} transition={{duration:0.5}} className ="grid grid-cols-1 lg:grid-cols-12">
             <div className="col-span-5 place-self-center mb-4 lg:mt-0 mt-6 lg:text-xl lg:mr-15 mr-0">
