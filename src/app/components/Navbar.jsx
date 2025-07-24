@@ -59,9 +59,12 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} onClick={(e) => {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }} />
+                  e.preventDefault();
+                  const element = document.querySelector(link.path);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }} />
               </li>
             ))}
           </ul>
