@@ -7,6 +7,9 @@ html {
   scroll-padding-top: 50px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #ffffff;
