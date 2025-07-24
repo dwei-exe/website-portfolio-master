@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
 
           <p className="text-slate-600 text-center sm:text-right">
-            Copyright © 2025 Daniel Wei.
+            Copyright © 2025 Daniel Wei. All rights reserved.
           </p>
         </div>
       </div>
