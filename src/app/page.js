@@ -14,8 +14,8 @@ export default function Home() {
       </div>
       <div className='mt-24'>
         <About />
-        <Projects />
         <Skills />
+        <Projects />
       </div>
       <div className="px-5 xl:px-0 md:px-0">
         <Footer />
