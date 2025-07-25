@@ -1,8 +1,9 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, tech, gitUrl, previewUrl }) => {
   return (
     <div>
       <div
@@ -27,6 +28,19 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
       <div className="text-white rounded-b-xl mt-0 bg-[#161617] py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
+        <div className="flex flex-wrap gap-2 items-center">
+          {tech.map((techImg, index) => (
+            <div key={index} className="flex items-center">
+              <Image 
+                src={techImg} 
+                alt={`Technology ${index + 1}`} 
+                width={25} 
+                height={25}
+                className="rounded-full"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

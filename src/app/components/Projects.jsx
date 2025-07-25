@@ -10,6 +10,7 @@ const projectData =[
         title: "React Portfolio Website",
         description: "Project 1 description",
         image: '/assets/projects/1.png',
+        tech: ["/assets/skills/1.png","/assets/skills/1.png"],
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
@@ -19,6 +20,7 @@ const projectData =[
         title: "React Portfolio Website",
         description: "Project 2 description",
         image: '/assets/projects/2.png',
+        tech: ["/assets/skills/1.png","/assets/skills/1.png"],
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
@@ -28,6 +30,7 @@ const projectData =[
         title: "React Portfolio Website",
         description: "Project 3 description",
         image: '/assets/projects/3.png',
+        tech: ["/assets/skills/1.png","/assets/skills/1.png"],
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
@@ -83,6 +86,7 @@ const Projects = () => {
               key={project.id}
               title={project.title}
               description={project.description}
+              tech={project.tech}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
