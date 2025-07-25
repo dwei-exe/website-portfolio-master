@@ -5,6 +5,7 @@ import TabButton from './TabButton';
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience_Data =[
   {
@@ -60,20 +61,36 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <VerticalTimeline>
-        {
-          Experience_Data.map((experienceItem,index) => (
-            <React.Fragment key={index}>
-              <VerticalTimelineElement>
-                <h3>
-                  {experienceItem.title}
-                </h3>
-                <p>{experienceItem.location}</p>
-                <p>{experienceItem.description}</p>
-              </VerticalTimelineElement>
-            </React.Fragment>
-            
-          ))
-        }
+        {Experience_Data.map((experienceItem, index) => (
+          <VerticalTimelineElement
+            key={index}
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#1e1e1e', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid #1e1e1e' }}
+            date={experienceItem.date}
+            iconStyle={{ background: '#121212' }}
+            icon={
+              <div className="flex justify-center items-center w-full h-full">
+                <Image
+                  src={experienceItem.icon}
+                  alt={experienceItem.title}
+                  width={25}
+                  height={25}
+                />
+              </div>
+            }
+          >
+            <h3 className="vertical-timeline-element-title text-xl font-bold">
+              {experienceItem.title}
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle text-[#ADB7BE] mt-2">
+              {experienceItem.location}
+            </h4>
+            <p className="text-[#ADB7BE] mt-2">
+              {experienceItem.description}
+            </p>
+          </VerticalTimelineElement>
+        ))}
       </VerticalTimeline>
     ),
   },
