@@ -4,16 +4,77 @@ import Image from "next/image";
 import TabButton from './TabButton';
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+
+const Experience_Data =[
+  {
+    title: "Mcgill",
+    location: "Montreal, CA",
+    description: "This is where I studied for my BEng",
+    icon: "/assets/skills/css.png",
+    date: "2019-2023",
+  },
+  {
+    title: "Mcgill",
+    location: "Montreal, CA",
+    description: "This is where I studied for my BEng",
+    icon: "/assets/skills/css.png",
+    date: "2019-2023",
+  },
+  {
+    title: "Mcgill",
+    location: "Montreal, CA",
+    description: "This is where I studied for my BEng",
+    icon: "/assets/skills/css.png",
+    date: "2019-2023",
+  },
+]
+
+const Education_Data =[
+  {
+    title: "Mcgill",
+    location: "Montreal, CA",
+    description: "This is where I studied for my BEng",
+    icon: "/assets/skills/css.png",
+    date: "2019-2023",
+  },
+  {
+    title: "Mcgill",
+    location: "Montreal, CA",
+    description: "This is where I studied for my BEng",
+    icon: "/assets/skills/css.png",
+    date: "2019-2023",
+  },
+  {
+    title: "Mcgill",
+    location: "Montreal, CA",
+    description: "This is where I studied for my BEng",
+    icon: "/assets/skills/css.png",
+    date: "2019-2023",
+  },
+]
 
 const TAB_DATA = [
   {
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-dict pl-2 text-center">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
+      <VerticalTimeline>
+        {
+          Experience_Data.map((experienceItem,index) => (
+            <React.Fragment key={index}>
+              <VerticalTimelineElement>
+                <h3>
+                  {experienceItem.title}
+                </h3>
+                <p>{experienceItem.location}</p>
+                <p>{experienceItem.description}</p>
+              </VerticalTimelineElement>
+            </React.Fragment>
+            
+          ))
+        }
+      </VerticalTimeline>
     ),
   },
   {
