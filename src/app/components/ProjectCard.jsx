@@ -36,7 +36,6 @@ const ProjectCard = ({ imgUrl, title, description, tech, gitUrl, previewUrl }) =
                 alt={`Technology ${index + 1}`} 
                 width={25} 
                 height={25}
-                className="rounded-full"
               />
             </div>
           ))}
