@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 const Skills = () => {
   return (
-    <section className="w-full bg-[#121212] py-16">
+    <section className="w-full bg-[#121212] py-16" id="skills">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-12 lg:px-8">
         <h2 className="text-center text-4xl font-bold text-white mb-8">
           My Skills
@@ -13,7 +13,7 @@ const Skills = () => {
         <h3 className="text-center text-2xl font-semibold text-white mb-8">
           Programming Languages
         </h3>
-        <div className="relative overflow-hidden w-full">
+        <div className="relative overflow-hidden w-full pb-6">
           {/* Create mask container */}
           <div className="relative w-full">
             {/* Add gradient masks */}

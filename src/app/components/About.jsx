@@ -63,7 +63,7 @@ const About = () => {
     <div className='w-full' id="about">
       <motion.section 
         ref={ref}
-        className="w-full bg-[#080808] py-0 sm:py-12 md:py-16"
+        className="w-full bg-[#121212] py-0 sm:py-12 md:py-16"
         initial={{ opacity: 0, y: 100 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
