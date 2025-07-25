@@ -13,7 +13,7 @@ const Experience_Data =[
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
     icon: "/assets/about/experience/mcgill.png",
-    skills: ["/assets/skills/CSS.png","/assets/skills/CSS.png"],
+    skills: ["/assets/skills/css.png","/assets/skills/css.png"],
     date: "2019-2023",
   },
   {
@@ -21,7 +21,7 @@ const Experience_Data =[
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
     icon: "/assets/about/experience/mcgill.png",
-    skills: ["/assets/skills/CSS.png","/assets/skills/CSS.png"],
+    skills: ["/assets/skills/css.png","/assets/skills/css.png"],
     date: "2019-2023",
   },
   {
@@ -29,7 +29,7 @@ const Experience_Data =[
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
     icon: "/assets/about/experience/mcgill.png",
-    skills: ["/assets/skills/CSS.png","/assets/skills/CSS.png"],
+    skills: ["/assets/skills/css.png","/assets/skills/css.png"],
     date: "2019-2023",
   },
 ]
@@ -39,21 +39,21 @@ const Education_Data =[
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/CSS.png",
+    icon: "/assets/skills/css.png",
     date: "2019-2023",
   },
   {
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/CSS.png",
+    icon: "/assets/skills/css.png",
     date: "2019-2023",
   },
   {
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/CSS.png",
+    icon: "/assets/skills/css.png",
     date: "2019-2023",
   },
 ]
