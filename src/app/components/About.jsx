@@ -12,21 +12,24 @@ const Experience_Data =[
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
+    icon: "/assets/about/experience/mcgill.png",
+    skills: ["/assets/skills/CSS.png","/assets/skills/CSS.png"],
     date: "2019-2023",
   },
   {
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
+    icon: "/assets/about/experience/mcgill.png",
+    skills: ["/assets/skills/CSS.png","/assets/skills/CSS.png"],
     date: "2019-2023",
   },
   {
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
+    icon: "/assets/about/experience/mcgill.png",
+    skills: ["/assets/skills/CSS.png","/assets/skills/CSS.png"],
     date: "2019-2023",
   },
 ]
@@ -36,21 +39,21 @@ const Education_Data =[
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
+    icon: "/assets/skills/CSS.png",
     date: "2019-2023",
   },
   {
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
+    icon: "/assets/skills/CSS.png",
     date: "2019-2023",
   },
   {
     title: "Mcgill",
     location: "Montreal, CA",
     description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
+    icon: "/assets/skills/CSS.png",
     date: "2019-2023",
   },
 ]
@@ -65,10 +68,17 @@ const TAB_DATA = [
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: '#f5f5f7',boxShadow: "none", border:"1px solid #d1d1d6"}}
+            contentStyle={{ background: '#f5f5f7', boxShadow: "none", border:"1px solid #d1d1d6"}}
             contentArrowStyle={{ borderRight: '7px solid #d1d1d6' }}
             date={experienceItem.date}
-            iconStyle={{ background: 'white' }}
+            iconStyle={{ 
+              background: 'white',
+              border: '3px solid #d1d1d6',
+              borderRadius: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <Image
@@ -76,6 +86,7 @@ const TAB_DATA = [
                   alt={experienceItem.title}
                   width={60}
                   height={60}
+                  className="rounded-full object-contain p-2"
                 />
               </div>
             }
@@ -89,6 +100,21 @@ const TAB_DATA = [
             <p className="text-[#585858] mt-2">
               {experienceItem.description}
             </p>
+            <div className="flex flex-wrap gap-2 items-center mt-2">
+              {experienceItem.skills.map((techImg, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <Image 
+                    src={techImg} 
+                    alt={`Technology ${index + 1}`} 
+                    width={25} 
+                    height={25}
+                  />
+                  <span className="text-xs text-[#6e6e73] mt-1">
+                    {techImg.split('/').pop().split('.')[0].toUpperCase()}
+                  </span>
+                </div>
+              ))}
+            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
