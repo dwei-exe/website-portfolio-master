@@ -60,33 +60,33 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <VerticalTimeline>
+      <VerticalTimeline lineColor=''>
         {Experience_Data.map((experienceItem, index) => (
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: '#1e1e1e', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid #1e1e1e' }}
+            contentStyle={{ background: '#f5f5f7',boxShadow: "none", border:"1px solid #696969"}}
+            contentArrowStyle={{ borderRight: '7px solid #696969' }}
             date={experienceItem.date}
-            iconStyle={{ background: '#121212' }}
+            iconStyle={{ background: 'white' }}
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <Image
                   src={experienceItem.icon}
                   alt={experienceItem.title}
-                  width={25}
-                  height={25}
+                  width={60}
+                  height={60}
                 />
               </div>
             }
           >
-            <h3 className="vertical-timeline-element-title text-xl font-bold">
+            <h3 className="vertical-timeline-element-title text-2xl font-bold text-black">
               {experienceItem.title}
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-[#ADB7BE] mt-2">
+            <h4 className="vertical-timeline-element-subtitle text-[#6e6e73] text-lg mt-2">
               {experienceItem.location}
             </h4>
-            <p className="text-[#ADB7BE] mt-2">
+            <p className="text-[#585858] mt-2">
               {experienceItem.description}
             </p>
           </VerticalTimelineElement>
