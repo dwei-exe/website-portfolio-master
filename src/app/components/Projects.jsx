@@ -55,7 +55,7 @@ const Projects = () => {
   return (
   <section className='w-full pb-15 bg-[#080808]' id="projects">
     <div className="max-w-7xl mx-auto px-8 sm:px-12 sm:py-6 md:px-12 lg:px-8">
-      <h2 className="pt-0 text-center text-4xl font-bold text-white mt-4 sm:mt-0 sm:pt-4">
+      <h2 className="pt-4 md:pt-0 xl:pt-0 text-center text-4xl font-bold text-white xl:mt-4 md:mt-4 mt-0">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6 px">

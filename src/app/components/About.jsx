@@ -89,7 +89,7 @@ const About = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={experienceIsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
-        className='px-0 sm:px-3'
+        className='xl:px-0 md:px-0 px-3'
       >
         <div className="flex justify-center flex-row items-center mt-8 xl:pt-10 md:pt-10">
             <TabButton
