@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Skills from './components/Skills';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <div className='mt-24'>
         <About />
         <Projects />
+        <Skills />
       </div>
       <div className="px-5 xl:px-0 md:px-0">
         <Footer />
