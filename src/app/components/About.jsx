@@ -84,8 +84,8 @@ const TAB_DATA = [
                 <Image
                   src={experienceItem.icon}
                   alt={experienceItem.title}
-                  width={60}
-                  height={60}
+                  width={80}
+                  height={80}
                   className="rounded-full object-contain p-2"
                 />
               </div>
