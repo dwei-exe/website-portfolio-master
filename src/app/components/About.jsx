@@ -86,7 +86,7 @@ const TAB_DATA = [
                   alt={experienceItem.title}
                   width={80}
                   height={80}
-                  className="rounded-full object-contain p-2"
+                  className="rounded-full object-contain p-1"
                 />
               </div>
             }
@@ -100,7 +100,7 @@ const TAB_DATA = [
             <p className="text-[#585858] mt-2">
               {experienceItem.description}
             </p>
-            <div className="flex flex-wrap gap-2 items-center mt-2">
+            <div className="flex flex-wrap gap-2 items-center mt-3">
               {experienceItem.skills.map((techImg, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <Image 
