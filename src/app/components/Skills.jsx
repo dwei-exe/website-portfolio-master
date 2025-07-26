@@ -3,6 +3,28 @@ import { useState, useEffect } from 'react';
 import Image from "next/image";
 import {motion} from "framer-motion";
 
+const programmingLanguages = [
+  { name: "Python", icon: "/assets/skills/Python.png" },
+  { name: "C++", icon: "/assets/skills/C++.png" },
+  { name: "MongoDB", icon: "/assets/skills/mongodb.png" },
+  { name: "SQL", icon: "/assets/skills/SQL.png" },
+  { name: "Typescript", icon: "/assets/skills/TypeScript.png" },
+  { name: "HTML", icon: "/assets/skills/html.png" },
+  { name: "CSS", icon: "/assets/skills/CSS.png" },
+  { name: "Javascript", icon: "/assets/skills/Javascript.png" },
+  { name: "MatLab", icon: "/assets/skills/MatLab.png" },
+  { name: "Bash", icon: "/assets/skills/Bash.png" },
+];
+
+const frameworks = [
+  { name: "React", icon: "/assets/skills/React.png" },
+  { name: "Node", icon: "/assets/skills/Node.js.png" },
+  { name: "TensorFlow", icon: "/assets/skills/TensorFlow.png" },
+  { name: "QT", icon: "/assets/skills/Qt.png" },
+  { name: "Git", icon: "/assets/skills/Git.png" },
+  { name: "Arduino", icon: "/assets/skills/Arduino.png" },
+];
+
 const Skills = () => {
   return (
     <section className="w-full bg-[#121212] py-16" id="skills">
@@ -27,34 +49,27 @@ const Skills = () => {
                 x: ["0%", "-50%"],
               }}
               transition={{
-                duration: 7,
+                duration: 10,
                 ease: "linear",
                 repeat: Infinity,
+                repeatType:'loop',
               }}
             >
-        <div className='justify-items-center'><Image src="/assets/skills/Python.svg" height={60} width = {60} alt="python" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Python</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/C++.png" height={60} width = {60} alt="C++" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>C++</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/mongodb.png" height={60} width = {60} alt="mongodb" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MongoDB</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/SQL.png" height={60} width = {60} alt="SQL" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>SQL</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/CSS.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/Javascript.png" height={60} width = {60} alt="javascript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Javascript</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/TypeScript.png" height={60} width = {60} alt="typescript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Typescript</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/MatLab.png" height={60} width = {60} alt="MatLab" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MatLab</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/Bash.png" height={60} width = {60} alt="Bash" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Bash</p></div>
-
-        {/* Second set of logos for aniumation */}
-        <div className='justify-items-center'><Image src="/assets/skills/Python.png" height={60} width = {60} alt="python" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Python</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/C++.png" height={60} width = {60} alt="C++" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>C++</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/mongodb.png" height={60} width = {60} alt="mongodb" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MongoDB</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/SQL.png" height={60} width = {60} alt="SQL" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>SQL</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/CSS.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/Javascript.png" height={60} width = {60} alt="javascript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Javascript</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/TypeScript.png" height={60} width = {60} alt="typescript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Typescript</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/MatLab.png" height={60} width = {60} alt="MatLab" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MatLab</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/Bash.png" height={60} width = {60} alt="Bash" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Bash</p></div>
-      </motion.div>
+              {[...programmingLanguages, ...programmingLanguages].map((language, index) => (
+                <div key={index} className='flex flex-col items-center w-[60px]'>
+                  <div className='h-[60px] w-[60px] flex items-center justify-center'>
+                    <Image 
+                      src={language.icon}
+                      height={50}
+                      width={50}
+                      alt={language.name.toLowerCase()}
+                      className='object-contain'
+                    />
+                  </div>
+                  <p className='text-[#7f7f83] text-xl text-center'>{language.name}</p>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
         <h3 className="text-center text-2xl font-semibold text-white mb-8">
@@ -74,24 +89,27 @@ const Skills = () => {
                 x: ["0%", "-50%"],
               }}
               transition={{
-                duration: 7,
+                duration: 10,
                 ease: "linear",
                 repeat: Infinity,
+                repeatType:'loop',
               }}
             >
-        <div className='justify-items-center'><Image src="/assets/skills/css.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/figma.png" height={60} width = {60} alt="figma" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Figma</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/mongodb.png" height={60} width = {60} alt="mongodb" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MongoDB</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/node.png" height={60} width = {60} alt="node" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Node.js</p></div>
-
-        {/* Second set of logos for aniumation */}
-        <div className='justify-items-center'><Image src="/assets/skills/css.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/figma.png" height={60} width = {60} alt="figma" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Figma</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/mongodb.png" height={60} width = {60} alt="mongodb" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MongoDB</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/node.png" height={60} width = {60} alt="node" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Node.js</p></div>
-      </motion.div>
+              {[...frameworks, ...frameworks,...frameworks, ...frameworks].map((language, index) => (
+                <div key={index} className='flex flex-col items-center w-[60px]'>
+                  <div className='h-[60px] w-[60px] flex items-center justify-center'>
+                    <Image 
+                      src={language.icon}
+                      height={50}
+                      width={50}
+                      alt={language.name.toLowerCase()}
+                      className='object-contain'
+                    />
+                  </div>
+                  <p className='text-[#7f7f83] text-xl text-center'>{language.name}</p>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </div>
