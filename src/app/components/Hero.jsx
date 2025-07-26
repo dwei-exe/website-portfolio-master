@@ -44,11 +44,11 @@ const Hero = () => {
                             Email me
                         </a>
                     </button>
-                    <button className="px-6 py-3 font-bold w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-black hover:text-white hover:border-white text-black border-2 border-black mt-3">
+                    {/*<button className="px-6 py-3 font-bold w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-black hover:text-white hover:border-white text-black border-2 border-black mt-3">
                         <a href="/assets/cv.pdf" target="_blank" rel="noopener noreferrer">
                             Download CV
                         </a>
-                    </button>
+                    </button>*/}
                     <button className="px-6 py-3 font-bold w-full sm:w-fit rounded-full bg-transparent hover:bg-black hover:text-white hover:border-white text-black border-2 border-black mt-3">
                         <a href="https://www.linkedin.com/in/daniel-wei1" target="_blank" rel="noopener noreferrer">
                             LinkedIn

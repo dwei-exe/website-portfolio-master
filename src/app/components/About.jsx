@@ -203,7 +203,7 @@ const About = () => {
                 <h2 className='ext-whitefont-bold font-extrabold text-4xl mb-4 xl:mb-10 md:bt-10'>
                     About Me
                 </h2>
-                <p className=" text-slate-200 md:text-lg xl:text-xl mt-0 md:mt-10 xl:mt-20">
+                <p className=" text-slate-200 md:text-lg xl:text-xl mt-0 md:mt-10 xl:mt-20 pr-0 md:pr-15 xl:pr-25">
                     I&apos;m a software developer who&apos;s been building real systems since I taught myself to code. My code currently serves researchers analyzing chemical pathways, powers the competition portal for one of Canada&apos;s largest robotics competitions, and builds machine learning models in healthcare. I&apos;m always learning, always building, and always looking for the next challenge.
                 </p>
                 
