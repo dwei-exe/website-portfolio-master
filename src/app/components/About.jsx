@@ -9,52 +9,50 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience_Data =[
   {
-    title: "Mcgill",
+    title: "Software Developer Intern",
+    institution: "Center for Research in Computational Thermochemistry (CRCT)",
     location: "Montreal, CA",
-    description: "This is where I studied for my BEng",
-    icon: "/assets/about/experience/mcgill.png",
+    description: "FactSage Software\nLife Cycle Analysis Module for chemical process simulations in FactFlow",
     skills: ["/assets/skills/css.png","/assets/skills/css.png"],
-    date: "2019-2023",
+    icon: "/assets/about/experience/mcgill.png",
+    date: "2025-Present",
   },
   {
-    title: "Mcgill",
+    title: "BEng - Software Engineering (Co-op)",
+    institution: "Mcgill University",
     location: "Montreal, CA",
-    description: "This is where I studied for my BEng",
-    icon: "/assets/about/experience/mcgill.png",
+    description: `Managr. Competition Management Platform\n• React Native Application for tracking competition events`,
     skills: ["/assets/skills/css.png","/assets/skills/css.png"],
-    date: "2019-2023",
+    icon: "/assets/about/experience/mcgill.png",
+    date: "2023-Present",
   },
   {
-    title: "Mcgill",
+    title: "Robotics Engineer",
+    institution: "Marianopolis Robotics",
     location: "Montreal, CA",
-    description: "This is where I studied for my BEng",
+    description: "Robotics Team Captain | 2024 Canadian Robotics Competition Champions 🏆\n• Sponsorship-Outreach-Organization\n• Arduino and C++ robot control systems\n• Automated Computer Aided Design (CAD) Workflows",
+    skills: ["/assets/skills/python.svg","/assets/skills/css.png"],
     icon: "/assets/about/experience/mcgill.png",
-    skills: ["/assets/skills/css.png","/assets/skills/css.png"],
-    date: "2019-2023",
+    date: "2023-Present",
   },
 ]
 
 const Education_Data =[
   {
-    title: "Mcgill",
+    title: "BEng - Software Engineering (Co-op)",
+    institution: "Mcgill University",
     location: "Montreal, CA",
-    description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
-    date: "2019-2023",
+    description: `Schulich Leaders STEM Scholarship (120k)\n\nRelevant Coursework: Object Oriented Programming, Algorithms and Data Structures, Fundamentals of Programming, Fundamentals of Software Development, Software Systems, Design Principles and Methods`,
+    icon: "/assets/about/experience/mcgill.png",
+    date: "2025-Present",
   },
   {
-    title: "Mcgill",
+    title: "DEC - Honors Pure and Applied Science",
+    institution: "Marianopolis College",
     location: "Montreal, CA",
-    description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
-    date: "2019-2023",
-  },
-  {
-    title: "Mcgill",
-    location: "Montreal, CA",
-    description: "This is where I studied for my BEng",
-    icon: "/assets/skills/css.png",
-    date: "2019-2023",
+    description: `Director General's Merit Scholarship for Academic Excellence (2023-2025), Dean's List (all 4 semesters), Marianopolis Scholar\n\nChemistry Teaching Assistant, Mathematics/Physics Peer Tutor, Peer Mentor\n\nRelevant Coursework: Calculus I, Calculus II (enriched), Calculus III, Linear Algebra I (enriched), Linear Algebra II, Mechanics, Waves Light and Modern Physics (enriched), Electricity and Magnetism (enriched)`,
+    icon: "/assets/about/experience/mari.png",
+    date: "2023-2025",
   },
 ]
 
@@ -65,6 +63,70 @@ const TAB_DATA = [
     content: (
       <VerticalTimeline lineColor='#d1d1d6'>
         {Experience_Data.map((experienceItem, index) => (
+          <VerticalTimelineElement
+            key={index}
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#f5f5f7', boxShadow: "none", border:"1px solid #d1d1d6"}}
+            contentArrowStyle={{ borderRight: '7px solid #d1d1d6' }}
+            date={experienceItem.date}
+            iconStyle={{ 
+              background: 'white',
+              border: '3px solid #d1d1d6',
+              borderRadius: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+            icon={
+              <div className="flex justify-center items-center w-full h-full">
+                <Image
+                  src={experienceItem.icon}
+                  alt={experienceItem.title}
+                  width={60}
+                  height={60}
+                  className="rounded-full object-contain p-1"
+                />
+              </div>
+            }
+          >
+            <h3 className="vertical-timeline-element-title text-xl md:text-2xl xl:text-2xl font-bold text-black">
+              {experienceItem.title}
+            </h3>
+            <h3 className="vertical-timeline-element-title text-xl md:text-2xl xl:text-xl font-semibold text-[#3a3a3c]">
+              {experienceItem.institution}
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle text-[#6e6e73] text-lg mt-2">
+              {experienceItem.location}
+            </h4>
+            <p className="text-[#585858] mt-2 whitespace-pre-line">
+              {experienceItem.description}
+            </p>
+            <div className="flex flex-wrap gap-2 items-center mt-3">
+              {experienceItem.skills.map((techImg, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <Image 
+                    src={techImg} 
+                    alt={`Technology ${index + 1}`} 
+                    width={25} 
+                    height={25}
+                  />
+                  <span className="text-xs text-[#6e6e73] mt-1">
+                    {techImg.split('/').pop().split('.')[0].toUpperCase()}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <VerticalTimeline lineColor='#d1d1d6'>
+        {Education_Data.map((experienceItem, index) => (
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
@@ -94,59 +156,20 @@ const TAB_DATA = [
             <h3 className="vertical-timeline-element-title text-xl md:text-2xl xl:text-2xl font-bold text-black">
               {experienceItem.title}
             </h3>
+            <h3 className="vertical-timeline-element-title text-xl md:text-2xl xl:text-2xl font-semibold text-[#3a3a3c]">
+              {experienceItem.institution}
+            </h3>
             <h4 className="vertical-timeline-element-subtitle text-[#6e6e73] text-lg mt-2">
               {experienceItem.location}
             </h4>
-            <p className="text-[#585858] mt-2">
+            <p className="text-[#585858] mt-2 whitespace-pre-line">
               {experienceItem.description}
             </p>
-            <div className="flex flex-wrap gap-2 items-center mt-3">
-              {experienceItem.skills.map((techImg, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <Image 
-                    src={techImg} 
-                    alt={`Technology ${index + 1}`} 
-                    width={25} 
-                    height={25}
-                  />
-                  <span className="text-xs text-[#6e6e73] mt-1">
-                    {techImg.split('/').pop().split('.')[0].toUpperCase()}
-                  </span>
-                </div>
-              ))}
-            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
     ),
   },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-dict pl-2 text-center">
-        <li>McGill University</li>
-        <li>Marianopolis College</li>
-      </ul>
-    ),
-  },
-  /*{
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-dict pl-2 text-center">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },*/
 ];
 
 
@@ -180,8 +203,8 @@ const About = () => {
                 <h2 className='ext-whitefont-bold font-extrabold text-4xl mb-4 xl:mb-10 md:bt-10'>
                     About Me
                 </h2>
-                <p className=" text-slate-200 md:text-lg xl:text-xl ">
-                    I am a software developer with experience deploying a variety of applications. My background includes building web solutions, optimizing user experiences, and working with modern technologies to deliver reliable and scalable products.
+                <p className=" text-slate-200 md:text-lg xl:text-xl mt-0 md:mt-10 xl:mt-20">
+                    I&apos;m a software developer who&apos;s been building real systems since I taught myself to code. My code currently serves researchers analyzing chemical pathways, powers the competition portal for one of Canada&apos;s largest robotics competitions, and builds machine learning models in healthcare. I&apos;m always learning, always building, and always looking for the next challenge.
                 </p>
                 
             </div>

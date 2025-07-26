@@ -37,7 +37,7 @@ const Hero = () => {
                         />
 
                 </h1>
-                <p className ="text-black text-lg lg:text-xl mb-6">My passion is building real-world solutions that affect people&apos;s lives. Let&apos;s drive the future of our technology together.</p>
+                <p className ="text-black text-lg lg:text-xl mb-6">Self-taught developer who builds and deploys systems that actually get used. I&apos;m passionate about delivering real-world solutions that affect people&apos;s lives.</p>
                 <div>
                     <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 hover:bg-white text-white font-bold hover:text-black border-2 bg-gradient-to-br from-blue-500 via bg-purple-500 to bg-pink-600 hover:border-black mt-3">
                         <a href="mailto:daniel.wei2006@hotmail.com" target="_blank" rel="noopener noreferrer">

@@ -28,7 +28,7 @@ const ProjectCard = ({ imgUrl, title, description, tech, gitUrl, previewUrl }) =
       <div className="text-white rounded-b-xl mt-0 bg-[#161617] py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
-        <div className="flex flex-wrap gap-2 items-center">
+        <div className="flex flex-wrap gap-2 items-center mt-2">
           {tech.map((techImg, index) => (
             <div key={index} className="flex items-center">
               <Image 

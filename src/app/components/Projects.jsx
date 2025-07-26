@@ -56,7 +56,7 @@ const Projects = () => {
   };
 
   return (
-  <section className='w-full pb-15 bg-[#080808]' id="projects">
+  <section className='w-full pb-15 bg-[#080808] pb-7' id="projects">
     <div className="max-w-7xl mx-auto px-8 sm:px-12 sm:py-6 md:px-12 lg:px-8">
       <h2 className="pt-4 md:pt-0 xl:pt-0 text-center text-4xl font-bold text-white xl:mt-4 md:mt-4 mt-0">
         My Projects
@@ -67,11 +67,11 @@ const Projects = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
-        />
+        /> */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
