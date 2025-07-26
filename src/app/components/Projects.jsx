@@ -35,6 +35,16 @@ const projectData =[
         gitUrl: "/",
         previewUrl: "/",
     },
+    {
+        id: 4,
+        title: "React Portfolio Website",
+        description: "The website you're currently exploring!",
+        image: '/assets/projects/3.png',
+        tech: ["/assets/skills/css.png","/assets/skills/html.png","/assets/skills/node.png"],
+        tag: ["All", "Web"],
+        gitUrl: "/",
+        previewUrl: "/",
+    },
 ];
 
 const Projects = () => {
