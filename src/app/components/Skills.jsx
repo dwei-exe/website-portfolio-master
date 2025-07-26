@@ -10,7 +10,7 @@ const programmingLanguages = [
   { name: "SQL", icon: "/assets/skills/SQL.png" },
   { name: "Typescript", icon: "/assets/skills/TypeScript.png" },
   { name: "HTML", icon: "/assets/skills/html.png" },
-  { name: "CSS", icon: "/assets/skills/CSS.png" },
+  { name: "CSS", icon: "/assets/skills/css.png" },
   { name: "Javascript", icon: "/assets/skills/Javascript.png" },
   { name: "MatLab", icon: "/assets/skills/MatLab.png" },
   { name: "Bash", icon: "/assets/skills/Bash.png" },
@@ -18,7 +18,7 @@ const programmingLanguages = [
 
 const frameworks = [
   { name: "React", icon: "/assets/skills/react.png" },
-  { name: "Node", icon: "/assets/skills/Node.js.png" },
+  { name: "Node", icon: "/assets/skills/node.js.png" },
   { name: "TensorFlow", icon: "/assets/skills/TensorFlow.png" },
   { name: "QT", icon: "/assets/skills/Qt.png" },
   { name: "Git", icon: "/assets/skills/Git.png" },
