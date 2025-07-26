@@ -10,7 +10,7 @@ const projectData =[
         title: "React Portfolio Website",
         description: "Project 1 description",
         image: '/assets/projects/1.png',
-        tech: ["/assets/skills/css.png","/assets/skills/html.png","/assets/skills/node.png"],
+        tech: ["/assets/skills/css.png","/assets/skills/java.svg","/assets/skills/node.png"],
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
