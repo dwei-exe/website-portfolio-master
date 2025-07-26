@@ -17,7 +17,7 @@ const programmingLanguages = [
 ];
 
 const frameworks = [
-  { name: "React", icon: "/assets/skills/React.png" },
+  { name: "React", icon: "/assets/skills/react.png" },
   { name: "Node", icon: "/assets/skills/Node.js.png" },
   { name: "TensorFlow", icon: "/assets/skills/TensorFlow.png" },
   { name: "QT", icon: "/assets/skills/Qt.png" },
