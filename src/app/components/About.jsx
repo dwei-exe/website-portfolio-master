@@ -22,7 +22,7 @@ const Experience_Data =[
     institution: "Canadian Robotics Competition",
     location: "Montreal, CA",
     description: `Managr. Competition Management Platform\n• React Native Application for tracking competition events`,
-    skills: ["/assets/skills/React.png","/assets/skills/mongodb.png","/assets/skills/TypeScript.png","/assets/skills/html.png","/assets/skills/css.png","/assets/skills/Javascript.png"],
+    skills: ["/assets/skills/react.png","/assets/skills/mongodb.png","/assets/skills/TypeScript.png","/assets/skills/html.png","/assets/skills/css.png","/assets/skills/Javascript.png"],
     icon: "/assets/about/experience/CRC.png",
     date: "2023-Present",
   },
