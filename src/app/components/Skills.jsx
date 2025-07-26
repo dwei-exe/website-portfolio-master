@@ -32,23 +32,33 @@ const Skills = () => {
                 repeat: Infinity,
               }}
             >
-        <div className='justify-items-center'><Image src="/assets/skills/css.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/figma.png" height={60} width = {60} alt="figma" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Figma</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/Python.svg" height={60} width = {60} alt="python" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Python</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/C++.png" height={60} width = {60} alt="C++" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>C++</p></div>
         <div className='justify-items-center'><Image src="/assets/skills/mongodb.png" height={60} width = {60} alt="mongodb" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MongoDB</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/node.png" height={60} width = {60} alt="node" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Node.js</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/SQL.png" height={60} width = {60} alt="SQL" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>SQL</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/CSS.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/Javascript.png" height={60} width = {60} alt="javascript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Javascript</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/TypeScript.png" height={60} width = {60} alt="typescript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Typescript</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/MatLab.png" height={60} width = {60} alt="MatLab" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MatLab</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/Bash.png" height={60} width = {60} alt="Bash" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Bash</p></div>
 
         {/* Second set of logos for aniumation */}
-        <div className='justify-items-center'><Image src="/assets/skills/css.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/figma.png" height={60} width = {60} alt="figma" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Figma</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/Python.png" height={60} width = {60} alt="python" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Python</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/C++.png" height={60} width = {60} alt="C++" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>C++</p></div>
         <div className='justify-items-center'><Image src="/assets/skills/mongodb.png" height={60} width = {60} alt="mongodb" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MongoDB</p></div>
-        <div className='justify-items-center'><Image src="/assets/skills/node.png" height={60} width = {60} alt="node" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Node.js</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/SQL.png" height={60} width = {60} alt="SQL" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>SQL</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/html.png" height={60} width = {60} alt="html" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>HTML</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/CSS.png" height={60} width = {60} alt="css" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>CSS</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/Javascript.png" height={60} width = {60} alt="javascript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Javascript</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/TypeScript.png" height={60} width = {60} alt="typescript" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Typescript</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/MatLab.png" height={60} width = {60} alt="MatLab" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>MatLab</p></div>
+        <div className='justify-items-center'><Image src="/assets/skills/Bash.png" height={60} width = {60} alt="Bash" className='justify-items-center'/><p className='text-[#7f7f83] text-xl text-center'>Bash</p></div>
       </motion.div>
           </div>
         </div>
         <h3 className="text-center text-2xl font-semibold text-white mb-8">
-          Frameworks
+          Frameworks and tools
         </h3>
         <div className="relative overflow-hidden w-full">
           {/* Create mask container */}
