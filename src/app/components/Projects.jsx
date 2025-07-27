@@ -7,8 +7,8 @@ import { motion, useInView } from "framer-motion";
 const projectData =[
     {
         id: 1,
-        title: "React Portfolio Website",
-        description: "Project 1 description",
+        title: "Deep CNN Arrhythmia Classifier",
+        description: "Published a paper on a this deep-CNN model that can classify 4 types of irregular heartbeats using Wavelet Scalogram Transform. It achieved 96.88% overall accuracy.",
         image: '/assets/projects/1.png',
         tech: ["/assets/skills/css.png","/assets/skills/java.svg","/assets/skills/node.png"],
         tag: ["All", "Web"],
@@ -37,10 +37,10 @@ const projectData =[
     },
     {
         id: 4,
-        title: "React Portfolio Website",
-        description: "The website you're currently exploring!",
-        image: '/assets/projects/3.png',
-        tech: ["/assets/skills/css.png","/assets/skills/html.png","/assets/skills/node.png"],
+        title: "Portfolio Website",
+        description: "The website you're currently exploring! It's a fully responsive website for both mobile and desktop screens, so you can check out my work anywhere. Build with React, Next.js, HTML/CSS/JS and designed with Figma.",
+        image: '/assets/projects/4.png',
+        tech: ["/assets/skills/react.png","/assets/skills/Next.js.png","/assets/skills/html.png","/assets/skills/css.png","/assets/skills/javascript.png","/assets/skills/figma.png",],
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",

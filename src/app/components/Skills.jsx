@@ -22,7 +22,16 @@ const frameworks = [
   { name: "TensorFlow", icon: "/assets/skills/TensorFlow.png" },
   { name: "QT", icon: "/assets/skills/Qt.png" },
   { name: "Git", icon: "/assets/skills/Git.png" },
-  { name: "Arduino", icon: "/assets/skills/Arduino.png" },
+  { name: "Github", icon: "/assets/skills/Github.png" },
+  { name: "Arduino", icon: "/assets/skills/Arduino.png"},
+  { name: "CAD", icon: "/assets/skills/OnShape.png"},
+];
+
+const languages = [
+  { name: "English", icon: "/assets/skills/English.png" },
+  { name: "Français", icon: "/assets/skills/French.png" },
+  { name: "中文", icon: "/assets/skills/Chinese.png" },
+  { name: "Español", icon: "/assets/skills/Spanish.png" },
 ];
 
 const Skills = () => {
@@ -73,7 +82,7 @@ const Skills = () => {
           </div>
         </div>
         <h3 className="text-center text-2xl font-semibold text-white mb-8">
-          Frameworks and tools
+          Frameworks & Tools
         </h3>
         <div className="relative overflow-hidden w-full">
           {/* Create mask container */}
@@ -112,6 +121,27 @@ const Skills = () => {
             </motion.div>
           </div>
         </div>
+        <h3 className="text-center text-2xl font-semibold text-white mt-8">
+          Spoken Languages
+        </h3>
+        <div className="flex justify-center items-center w-full">
+          <motion.div className="flex gap-8 py-4 justify-center">
+              {[...languages].map((language, index) => (
+                <div key={index} className='flex flex-col items-center w-[60px]'>
+                  <div className='h-[60px] w-[60px] flex items-center justify-center'>
+                    <Image 
+                      src={language.icon}
+                      height={50}
+                      width={50}
+                      alt={language.name.toLowerCase()}
+                      className='object-contain'
+                    />
+                  </div>
+                  <p className='text-[#7f7f83] text-xl text-center'>{language.name}</p>
+                </div>
+              ))}
+            </motion.div>
+          </div>
       </div>
     </section>
   );
