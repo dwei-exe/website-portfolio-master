@@ -33,7 +33,7 @@ const Experience_Data =[
     description: "Robotics Team Captain | 2024 Canadian Robotics Competition Champions 🏆\n• Sponsorship-Outreach-Organization\n• Arduino and C++ robot control systems\n• Automated Computer Aided Design (CAD) Workflows",
     skills: ["/assets/skills/C++.svg","/assets/skills/Arduino.png","/assets/skills/OnShape.png"],
     icon: "/assets/about/experience/marirobotics.png",
-    date: "2023-Present",
+    date: "2023-2025",
   },
 ]
 
