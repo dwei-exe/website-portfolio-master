@@ -52,7 +52,7 @@ const projectData =[
         image: '/assets/projects/5.png',
         tech: ["/assets/skills/Javascript.png","/assets/skills/OnShape.png"],
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/dwei-exe/website-portfolio-master",
+        gitUrl: "https://github.com/dwei-exe/auxetic-intestine",
         previewUrl: "https://www.marianopolis.edu/2025/03/28/marianopolis-students-earn-top-honours-at-2025-montreal-regional-science-fair/",
     },
 ];
