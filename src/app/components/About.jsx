@@ -199,7 +199,7 @@ const About = () => {
         <div className="flex justify-center md:justify-end xl:justify-end h-full">
             <Image src="/assets/about/about.png" alt="About Image" className="rounded" width={500} height={500}/>
         </div>
-            <div className="text-center mt-4 md:mt-0 xl:text-left md:text-left flex flex-col h-full md:pl-10 xl:pl-15 md:pr-8 lg:pr-25 xl:pr-40 max-w-5xl">
+            <div className="text-center mt-4 md:mt-0 xl:text-left md:text-left flex flex-col h-full md:pl-10 xl:pl-15 md:pr-8 lg:pr-25 xl:pr-40 max-w-2xl">
                 <h2 className='text-whitefont-bold font-extrabold text-4xl mb-4 xl:mb-10 md:bt-10'>
                     About Me
                 </h2>
