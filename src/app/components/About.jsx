@@ -196,11 +196,11 @@ const About = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="md:grid md:grid-cols-2 xl:grid xl:grid-cols-2 xl:items-center xl:justify-center md:items-center md:justify-center gap-0 py-6 xl:pr-30 px-8 md:px-8 xl:gap-1 sm:py-2">
-        <div className="flex items-center justify-center h-full">
+        <div className="flex justify-center md:justify-end xl:justify-end h-full">
             <Image src="/assets/about/about.png" alt="About Image" className="rounded" width={500} height={500}/>
         </div>
-            <div className="text-center mt-4 md:mt-0 xl:text-left md:text-left flex flex-col h-full md:pl-10 xl:pl-15 md:pr-8 lg:pr-25 xl:pr-40">
-                <h2 className='ext-whitefont-bold font-extrabold text-4xl mb-4 xl:mb-10 md:bt-10'>
+            <div className="text-center mt-4 md:mt-0 xl:text-left md:text-left flex flex-col h-full md:pl-10 xl:pl-15 md:pr-8 lg:pr-25 xl:pr-40 max-w-5xl">
+                <h2 className='text-whitefont-bold font-extrabold text-4xl mb-4 xl:mb-10 md:bt-10'>
                     About Me
                 </h2>
                 <p className=" text-slate-200 md:text-lg xl:text-xl mt-0 md:mt-10 xl:mt-20">
