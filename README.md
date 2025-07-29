@@ -4,7 +4,7 @@ Welcome to my personal website portfolio! This is where you'll find my most rece
 
 ## 🌐 Live Website
 
-Visit the live website: **[danielwei.me]([https://www.danielwei.me])**
+Visit the live website: **[danielwei.me](https://www.danielwei.me)**
 
 ## About
 
