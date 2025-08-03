@@ -40,7 +40,7 @@ const projectData =[
         title: "My Personal Website",
         description: "The website you're currently exploring! It's a fully responsive website for both mobile and desktop screens, so you can check out my work anywhere. Build with React, Next.js, HTML/CSS/JS and designed with Figma.",
         image: '/assets/projects/4.png',
-        tech: ["/assets/skills/react.png","/assets/skills/Next.js.png","/assets/skills/html.png","/assets/skills/css.png","/assets/skills/Javascript.png","/assets/skills/figma.png",],
+        tech: ["/assets/skills/react.png","/assets/skills/Next.js.png","/assets/skills/Tailwind.png","/assets/skills/html.png","/assets/skills/css.png","/assets/skills/Javascript.png","/assets/skills/figma.png",],
         tag: ["All", "Web"],
         gitUrl: "https://github.com/dwei-exe/website-portfolio-master",
         previewUrl: "https://daniel-wei.vercel.app/",
