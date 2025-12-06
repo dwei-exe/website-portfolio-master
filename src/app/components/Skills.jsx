@@ -37,8 +37,8 @@ const languages = [
 
 const Skills = () => {
   return (
-    <section className="w-full bg-[#121212] py-16" id="skills">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-12 lg:px-8">
+    <section className="w-full bg-[#121212] py-16" id="skills" suppressHydrationWarning>
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-12 lg:px-8" suppressHydrationWarning>
         <h2 className="text-center text-4xl font-bold text-white mb-8">
           My Skills
         </h2>
@@ -147,5 +147,4 @@ const Skills = () => {
     </section>
   );
 };
-
 export default Skills
