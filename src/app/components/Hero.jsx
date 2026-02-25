@@ -39,21 +39,12 @@ const Hero = () => {
                 </h1>
                 <p className ="text-black text-lg lg:text-xl mb-6">Self-taught developer who builds and deploys systems that actually get used. I love delivering real-world tech that make peoples&apos; lives better.</p>
                 <div>
-                    <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 hover:bg-white text-white font-bold hover:text-black border-2 bg-gradient-to-br from-blue-500 via bg-purple-500 to bg-pink-600 hover:border-black mt-3">
-                        <a href="mailto:daniel.wei2006@hotmail.com">
-                            Email me
-                        </a>
-                    </button>
-                    {/*<button className="px-6 py-3 font-bold w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-black hover:text-white hover:border-white text-black border-2 border-black mt-3">
-                        <a href="/assets/cv.pdf" target="_blank" rel="noopener noreferrer">
-                            Download CV
-                        </a>
-                    </button>*/}
-                    <button className="px-6 py-3 font-bold w-full sm:w-fit rounded-full bg-transparent hover:bg-black hover:text-white hover:border-white text-black border-2 border-black mt-3">
-                        <a href="https://www.linkedin.com/in/daniel-wei1" target="_blank" rel="noopener noreferrer">
-                            LinkedIn
-                        </a>
-                    </button>
+                    <a href="mailto:daniel.wei2006@hotmail.com" className="inline-block px-6 py-3 rounded-full w-full sm:w-fit mr-4 hover:bg-white text-white font-bold hover:text-black border-2 bg-gradient-to-br from-blue-500 via bg-purple-500 to bg-pink-600 hover:border-black mt-3">
+                        Email me
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-wei1" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 font-bold w-full sm:w-fit rounded-full bg-transparent hover:bg-black hover:text-white hover:border-white text-black border-2 border-black mt-3">
+                        LinkedIn
+                    </a>
                 </div>
             </div>
                             
