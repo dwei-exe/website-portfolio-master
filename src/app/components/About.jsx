@@ -200,7 +200,7 @@ const About = () => {
             <Image src="/assets/about/about.png" alt="About Image" className="rounded" width={500} height={500}/>
         </div>
             <div className="text-center mt-4 md:mt-0 xl:text-left md:text-left flex flex-col h-full md:pl-10 xl:pl-15 md:pr-8 lg:pr-25 xl:pr-40 max-w-2xl">
-                <h2 className='text-whitefont-bold font-extrabold text-4xl mb-4 xl:mb-10 md:bt-10'>
+                <h2 className='text-white font-extrabold text-4xl mb-4 xl:mb-10 md:bt-10'>
                     About Me
                 </h2>
                 <p className=" text-slate-200 md:text-lg xl:text-xl mt-0 md:mt-10 xl:mt-20">
